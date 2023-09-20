@@ -1,0 +1,177 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 100;
+}
+canvas
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(12,12,12);
+    z-index: -1;
+}
+.red
+{
+    color: #b11313!important;
+    fill: #b11313!important;
+}
+.red-bg
+{
+    background-color: #b11313!important;
+}
+.center
+{
+    margin: 0 auto!important;
+}
+.center-txt
+{
+    text-align: center!important;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn:hover
+{
+    cursor: pointer;
+    fill: #fff!important;
+    transform: scale(1.1);
+    transition: .3s;
+}
+ul#navbar
+{
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    list-style: none;
+    display: inline-flex;
+}
+li.nav-item
+{
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 300;
+}
+li.nav-item:hover
+{
+    transform: scale(1.1);
+    transition: .3s;
+}
+ul#navbar > li#logo
+{
+    position: relative;
+    height: 100%;
+    width: 25vw;
+    margin-right: 150px;
+}
+ul#navbar > li#logo > span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+ul#navbar > li#logo > span#first
+{
+    transform: translate(-100%, -90%);
+    font-weight: 100;
+}
+ul#navbar > li#logo > span#last
+{
+    text-transform: uppercase;
+    transform: translate(-30%, -10%);
+    font-weight: 900;
+}
+ul#navbar > div.menu
+{
+    position: absolute;
+    right: 10vw;
+    transform: translateY(+300%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul#navbar > div.menu > li.nav-item
+{
+    margin-left: 50px;
+    font-size: 1rem;
+}
+ul#navbar > div.menu > li.nav-item:hover
+{
+    color: #b11313;
+}
+ul#navbar > div.menu > li.nav-item.active
+{
+    cursor: default;
+    color: #b11313;
+    transform: scale(1.1);
+}
+main
+{
+    position: relative;
+    height: 80vh;
+    width: 60vw;
+    padding: 20px 0 0 0;
+}
+main > h2
+{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    transform: translateY(-100%);
+}
+main > div > h1
+{
+    font-size: 1rem;
+    font-weight: 100;
+    /* transform: translateY(-100%); */
+}
+social
+{
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+social > div
+{
+    transition: .3s;
+}
+social > div.social
+{
+    position: fixed;
+    left: 10vw;
+}
+social > div.copyright
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3vh;
+    right: 10vw;
+}
+social > div.copyright > svg
+{
+    margin-right: 10px;
+}
+social > div.copyright > p > span::before
+{
+    content: " - ";
+}
+
+
