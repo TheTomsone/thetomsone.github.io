@@ -52,75 +52,32 @@ canvas
     transform: scale(1.1);
     transition: .3s;
 }
-ul#navbar
+
+div#logo
 {
     position: relative;
-    top: 0;
     height: 10vh;
     width: 100vw;
-    list-style: none;
-    display: inline-flex;
 }
-li.nav-item
-{
-    text-transform: lowercase;
-    cursor: pointer;
-    transition: .3s;
-    font-weight: 300;
-}
-li.nav-item:hover
-{
-    transform: scale(1.1);
-    transition: .3s;
-}
-ul#navbar > li#logo
-{
-    position: relative;
-    height: 100%;
-    width: 25vw;
-    margin-right: 150px;
-}
-ul#navbar > li#logo > span
+div#logo > span
 {
     position: absolute;
     top: 50%;
     left: 50%;
 }
-ul#navbar > li#logo > span#first
+div#logo > span#first
 {
+    text-transform: lowercase;
     transform: translate(-100%, -90%);
     font-weight: 100;
 }
-ul#navbar > li#logo > span#last
+div#logo > span#last
 {
     text-transform: uppercase;
     transform: translate(-30%, -10%);
     font-weight: 900;
 }
-ul#navbar > div.menu
-{
-    position: absolute;
-    right: 10vw;
-    transform: translateY(+300%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-ul#navbar > div.menu > li.nav-item
-{
-    margin-left: 50px;
-    font-size: 1rem;
-}
-ul#navbar > div.menu > li.nav-item:hover
-{
-    color: #b11313;
-}
-ul#navbar > div.menu > li.nav-item.active
-{
-    cursor: default;
-    color: #b11313;
-    transform: scale(1.1);
-}
+
 main
 {
     position: relative;
@@ -139,6 +96,12 @@ main > div > h1
     font-size: 1rem;
     font-weight: 100;
     /* transform: translateY(-100%); */
+}
+main > div > div.cv
+{
+    position: fixed;
+    left: 50%;
+    top: 60%;
 }
 social
 {
