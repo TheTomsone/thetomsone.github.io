@@ -45,6 +45,10 @@ canvas
     flex-direction: column;
     align-items: center;
 }
+.btn
+{
+    transition: .3s;
+}
 .btn:hover
 {
     cursor: pointer;
@@ -137,4 +141,9 @@ social > div.copyright > p > span::before
     content: " - ";
 }
 
-
+@media (max-width: 450px) {
+    social > div.social
+    {
+        bottom: 7vh;
+    }
+}
